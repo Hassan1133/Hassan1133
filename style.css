@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/bg.jpg);
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    background-color: rgb(116, 80, 54);
+}
+
+nav .menu {
+    color: white;
+    margin-left: 20px;
+}
+
+nav .menu h1 {
+    margin-left: 10px;
+    font-size: 30px;
+    display: inline;
+}
+
+section {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+section .main {
+    width: 45%;
+    height: auto;
+    background-color: rgb(204, 162, 145);
+    padding: 20px;
+}
+
+section .main input {
+    font-size: 18px;
+    width: 100%;
+    height: 31px;
+    padding: 10px;
+}
+
+section .main .inputBtn {
+    text-align: center;
+    margin-top: 15px;
+}
+
+section .main .inputBtn button {
+    font-size: 15px;
+    padding: 3px;
+    background-color: rgb(116, 80, 54);
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+section .main_output {
+    padding: 20px;
+}
+
+section .main_output {
+    display: flex;
+}
+
+section .main_output ul {
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+}
+
+section .main_output ul li {
+    margin-bottom: 10px;
+    overflow: auto;
+}
+
+.spanText {
+    float: left;
+}
+
+.delBtn {
+    float: right;
+    font-size: 15px;
+    padding: 3px;
+    background-color: rgb(116, 80, 54);
+    color: white;
+    border-radius: 5px;
+    margin-left: 8px;
+}
+
+.inputStyle {
+    width: 50% !important;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+@media only screen and (max-width:800px) {
+    section .main {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    section .main {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width:470px) {
+    section .main {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    section .main {
+        width: 90%;
+    }
+}
