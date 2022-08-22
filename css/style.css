@@ -1,0 +1,1007 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* home file styling  */
+
+
+/* start header  */
+
+header {
+    height: 110vh;
+    background-image: url(../images/banner-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    height: 13vh;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.30);
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}
+
+nav .navbar-brand {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav .navbar-brand small {
+    font-size: 17px;
+}
+
+.bg-light {
+    background-color: white !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bg-light .navbar-brand {
+    color: black;
+}
+
+.bg-light .navbar-nav .nav-item .nonActive {
+    color: black !important;
+}
+
+.navbar-nav .nav-item .nonActive:hover {
+    color: #00bcd4 !important;
+    transition: all .6s;
+}
+
+.bg-light .functional-buttons ul li .btn-1 {
+    color: #00bcd4;
+    border: 2px solid #00bcd4;
+}
+
+.bg-light .functional-buttons ul li .btn-1:hover {
+    background-color: #00bcd4;
+    color: white;
+    transition: all .6s;
+}
+
+nav .functional-buttons ul {
+    list-style: none;
+    display: flex;
+}
+
+nav .functional-buttons ul li .btn-1 {
+    text-decoration: none !important;
+    text-transform: uppercase;
+    margin-right: 20px !important;
+    border: 2px solid white;
+    color: white;
+    padding: 5px 15px;
+}
+
+nav .functional-buttons ul li .btn-1:hover {
+    background-color: white;
+    color: rgb(0, 183, 255);
+    transition: all .6s;
+}
+
+nav .functional-buttons ul li .btn-2 {
+    text-decoration: none !important;
+    text-transform: uppercase;
+    margin-right: 20px !important;
+    padding: 7.5px 15px;
+    color: white;
+    background-color: #00bcd4;
+}
+
+nav .functional-buttons ul li .btn-2:hover {
+    background-color: rgb(0, 144, 200);
+    transition: all .6s;
+}
+
+nav .navbar-collapse .navbar-nav {
+    margin-top: 10px !important;
+}
+
+nav .navbar-collapse .navbar-nav li .active {
+    color: #00bcd4 !important;
+}
+
+nav .navbar-collapse .navbar-nav li {
+    margin-right: 25px;
+}
+
+nav .navbar-collapse .navbar-nav li a {
+    font-size: 17px;
+    color: white !important;
+}
+
+nav .navbar-collapse .functional-buttons {
+    margin-top: 18px !important;
+}
+
+main {
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main {
+    padding-top: 180px;
+    width: 65%;
+    text-align: center;
+}
+
+main .main h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+
+main .main .inputText {
+    background-color: transparent;
+    width: 68%;
+    color: white;
+    padding: 12px;
+    border: 1px solid white;
+    outline: none;
+    margin-top: 50px;
+}
+
+main .main input::placeholder {
+    color: white;
+}
+
+main .main button {
+    margin-left: 15px;
+    margin-top: 50px;
+    padding: 13px 15px 13px 15px;
+    border: none;
+    background-color: rgb(0, 183, 255);
+    color: white;
+}
+
+main .main .radioBtn {
+    width: 75%;
+    display: flex;
+    color: white;
+    margin: 40px auto 0 auto;
+    justify-content: space-around;
+}
+
+main .main .radioBtn input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:991px) {
+    nav .navbar-collapse {
+        background-color: white;
+        text-align: center;
+    }
+    nav .navbar-collapse {
+        position: absolute;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+    }
+    nav .navbar-collapse .navbar-nav .nav-item {
+        border-bottom: 1px solid lightgrey;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0;
+    }
+    nav .navbar-collapse .navbar-nav .nav-item .nonActive {
+        color: grey !important;
+    }
+    .functional-buttons ul .btn-1 {
+        color: rgb(0, 183, 255) !important;
+        border: 2px solid rgb(0, 183, 255) !important;
+    }
+    .functional-buttons ul .btn-1:hover {
+        background-color: rgb(0, 183, 255) !important;
+        color: white !important;
+    }
+    .functional-buttons ul {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    main .main {
+        width: 100%;
+    }
+    main .main .inputText {
+        width: 50%;
+    }
+    main .main .radioBtn {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    main .main .radioBtn {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    main .main button {
+        padding: 13px 5px 13px 5px;
+    }
+}
+
+
+/* end of header  */
+
+
+/* start of trusted area */
+
+.trusted-section {
+    padding: 50px 0px 40px 0px;
+    background-color: #f7f7f7;
+}
+
+.trusted-section-heading {
+    text-align: center;
+}
+
+.trusted-section-heading h4 {
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-bottom: 50px;
+}
+
+.trusted-item img {
+    max-width: 156px;
+    margin: 0 auto;
+}
+
+
+/* end of trusted area  */
+
+
+/* start of services area  */
+
+.services-section {
+    margin-top: 100px;
+}
+
+.services-section .services-heading span {
+    color: rgb(4, 193, 240);
+    display: inline-block;
+    margin: 18px 0 12px 0;
+    font-weight: 520;
+    font-size: 18px;
+}
+
+.services-section .services-heading h2 {
+    font-weight: 650;
+}
+
+.services-section .services-heading p {
+    color: grey;
+}
+
+.services-section .service-item {
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 50px 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.services-section .service-item i {
+    color: #fff;
+    background-color: #00bcd4;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    font-size: 32px;
+    text-align: center;
+    display: inline-block;
+}
+
+.services-section .service-item h4 {
+    margin-top: 30px;
+    font-size: 21px;
+}
+
+.services-section .service-item p {
+    color: grey;
+    margin-top: 30px;
+}
+
+.services-section .service-item p a {
+    text-decoration: none;
+    color: #00bcd4;
+}
+
+
+/* end of services area  */
+
+
+/* start of pricing area  */
+
+.pricing-section {
+    margin-top: 100px;
+}
+
+.pricing-section-bg {
+    background-image: url(../images/pricing-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.pricing-section .pricing-heading {
+    text-align: center;
+    margin-top: 90px;
+}
+
+.pricing-section .pricing-heading h2 {
+    color: white;
+    font-weight: 650
+}
+
+.pricing-section .pricing-heading p {
+    color: white;
+    font-weight: 450;
+}
+
+.pricing-section .pricing-item {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+    padding: 50px;
+    position: relative;
+}
+
+.pricing-section .pricing-item h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.pricing-section .pricing-item .price {
+    background-color: #08cfe9;
+    margin: 40px 0 30px 0;
+    padding: 30px;
+}
+
+.pricing-section .pricing-item .price h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.pricing-section .pricing-item .price span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+}
+
+.pricing-section .pricing-item .price-gradient {
+    background: linear-gradient(145deg, rgba(114, 2, 187, 1) 0%, rgba(50, 100, 245, 1) 100%), rgb(114, 2, 187);
+    margin: 40px 0 30px 0;
+    padding: 30px;
+}
+
+.pricing-section .pricing-item .price-gradient h2 {
+    color: white;
+    font-weight: bold;
+}
+
+.pricing-section .pricing-item .price-gradient span {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+.pricing-section .pricing-item p {
+    color: grey;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.pricing-section .pricing-item hr {
+    color: rgb(187, 187, 187);
+}
+
+.pricing-section .pricing-item ul {
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+}
+
+.pricing-section .pricing-item ul li {
+    color: grey;
+    margin-top: 15px;
+    width: 100%;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.pricing-section .pricing-item ul li i {
+    color: rgb(114, 2, 187);
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.pricing-section .pricing-item .main-btn {
+    text-decoration: none;
+    position: relative;
+    background-color: #08cfe9;
+    color: white;
+    padding: 10px 30px;
+    top: 60px;
+    font-weight: bold;
+}
+
+.pricing-section .pricing-item .gradient-btn {
+    text-decoration: none;
+    position: relative;
+    background: linear-gradient(145deg, rgba(114, 2, 187, 1) 0%, rgba(50, 100, 245, 1) 100%), rgb(114, 2, 187);
+    color: white;
+    padding: 10px 30px;
+    top: 60px;
+    font-weight: bold;
+}
+
+
+/* end of pricing area  */
+
+
+/* start of features section  */
+
+.features-section {
+    margin-top: 160px;
+}
+
+.features-section .features-heading {
+    margin-bottom: 70px;
+}
+
+.features-section .features-heading span {
+    color: #00bcd4;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.features-section .features-heading h2 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.features-section .features-item {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.features-section .features-item .icon {
+    float: left;
+    margin-top: 12px;
+}
+
+.features-section .features-item .icon img {
+    max-width: 80px;
+    margin-right: 30px;
+}
+
+.features-section .features-item h5 {
+    font-weight: bold;
+}
+
+.features-section .features-item p {
+    margin-left: 110px;
+}
+
+
+/* end of features section  */
+
+
+/* start of testimonial section  */
+
+.testimonial-section {
+    margin-top: 140px;
+    background-color: #f7f7f7;
+    padding: 100px 0 80px 0;
+}
+
+.testimonial-section .testimonial-heading {
+    text-align: center;
+}
+
+.testimonial-section .testimonial-heading span {
+    color: #00bcd4;
+    font-weight: 500;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.testimonial-section .testimonial-heading h2 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.testimonial-section .testimonial-item {
+    text-align: center;
+}
+
+.testimonial-section .testimonial-item i {
+    width: 60px;
+    line-height: 60px;
+    color: #fff;
+    background: linear-gradient(145deg, rgba(114, 2, 187, 1) 0%, rgba(50, 100, 245, 1) 100%), rgb(114, 2, 187);
+    border-radius: 50%;
+    font-size: 18px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.testimonial-section .testimonial-item p {
+    font-style: italic;
+    color: grey;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 0 20px 0;
+}
+
+.testimonial-section .testimonial-item h4 {
+    font-size: 20px;
+    color: black;
+}
+
+.testimonial-section .testimonial-item span {
+    color: #00bcd4;
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+
+/* end of testimonial section  */
+
+
+/* start of footer  */
+
+footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+}
+
+footer .footer-item {
+    margin-top: 30px;
+}
+
+footer .footer-item h2 {
+    color: white;
+    font-size: 21px;
+    text-align: center;
+}
+
+footer .footer-item p {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+footer .footer-item ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .footer-item ul li {
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer .footer-item ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #fff;
+    opacity: 0.75;
+}
+
+footer .sub-footer {
+    margin-top: 50px;
+    border-top: 1px solid rgba(250, 250, 250, 0.30);
+}
+
+footer .sub-footer p {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+/* end of footer  */
+
+
+/* about file styling */
+
+
+/* start of header  */
+
+.aboutHeader {
+    background-image: url(../images/heading-bg.jpg);
+    height: 80vh;
+}
+
+.aboutHeader .aboutMain .container {
+    text-align: center;
+}
+
+.aboutHeader .aboutMain .container h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.aboutHeader .aboutMain .container p {
+    color: white;
+}
+
+.aboutHeader .aboutMain .container p a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* end of header  */
+
+
+/* start of aboutUs  */
+
+.aboutUs {
+    background-color: #f7f7f7;
+    padding: 120px 0;
+}
+
+.aboutUs .rightContent .aboutUsHeading span {
+    color: #00bcd4;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.aboutUs .rightContent .aboutUsHeading h2 {
+    color: black;
+    font-weight: 650;
+    margin: 15px 0;
+}
+
+.aboutUs .rightContent .aboutUsHeading p {
+    color: grey;
+    padding-right: 21px;
+}
+
+.aboutUs .rightContent hr {
+    color: lightgrey;
+    height: 2px;
+    margin-top: 40px;
+    width: 95%;
+}
+
+.aboutUs .rightContent .tabs ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 0;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.aboutUs .rightContent .tabs ul .active {
+    color: #00bcd4;
+}
+
+.aboutUs .rightContent .tabs .tabContent p {
+    color: grey;
+}
+
+@media only screen and (max-width:991px) {
+    .aboutUs .rightContent {
+        padding: 0 75px;
+        margin-top: 22px;
+    }
+    .aboutUs .rightContent .aboutUsHeading p {
+        padding-right: 0;
+    }
+    .aboutUs .rightContent hr {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .aboutUs .rightContent {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .aboutUs .rightContent .tabs ul {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+
+/* end of aboutUs  */
+
+
+/* start of team section  */
+
+.teamSection {
+    padding: 120px 0 50px 0;
+}
+
+.teamSection .teamHeading {
+    text-align: center;
+}
+
+.teamSection .teamHeading span {
+    color: #00bcd4;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.teamSection .teamHeading h2 {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.teamSection .teamHeading p {
+    color: grey;
+    padding: 0 40px;
+}
+
+.teamSection .teamItem {
+    text-align: center;
+    background-color: #f7f7f7;
+    margin-top: 60px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teamSection .teamItem:hover img {
+    opacity: 0.75;
+    transition: all 0.5s;
+}
+
+.teamSection .teamItem img {
+    width: 100%;
+}
+
+.teamSection .teamItem .teamItemContent h5 {
+    color: black;
+    margin: 30px 0 15px 0;
+}
+
+.teamSection .teamItem .teamItemContent span {
+    color: #00bcd4;
+    font-weight: 400;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+
+/* end of team section  */
+
+
+/* service file styling  */
+
+
+/* start of services  */
+
+.services-section .service-item {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.services-section .services-heading {
+    margin-left: 22px;
+}
+
+
+/* end of services  */
+
+
+/* contact file styling  */
+
+
+/* start of contact-section  */
+
+.contactUs {
+    padding: 140px 0;
+}
+
+.contactUs .contactItem form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactUs .contactItem input {
+    width: 80%;
+    padding: 10px;
+    outline: none;
+    margin-bottom: 25px;
+    border: 1px solid lightgrey;
+}
+
+.contactUs .contactItem input::placeholder {
+    color: grey;
+    font-weight: 500;
+}
+
+.contactUs .contactItem textarea {
+    width: 80%;
+    height: 150px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid lightgrey;
+}
+
+.contactUs .contactItem textarea::placeholder {
+    color: grey;
+    font-weight: 500;
+}
+
+.contactUs .contactItem .btn {
+    width: 80%;
+    padding: 0;
+    text-align: start;
+}
+
+.contactUs .contactItem button {
+    background-color: #00bcd4;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    padding: 12px 13px 12px 13px;
+    margin-top: 30px;
+}
+
+.contactUs .contactHeading span {
+    color: #00bcd4;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contactUs .contactHeading h2 {
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.contactUs .contactHeading p {
+    color: grey;
+    padding-right: 80px;
+}
+
+.contactUs .contactHeading hr {
+    color: rgb(151, 151, 151);
+    height: 2px;
+    margin-top: 40px;
+    width: 85%;
+}
+
+.contactUs ul {
+    list-style: none;
+}
+
+.contactUs ul {
+    padding: 0;
+}
+
+.contactUs ul li {
+    font-weight: bold;
+    color: black;
+}
+
+.contactUs ul .mOne {
+    margin-left: 100px;
+}
+
+.contactUs ul .mTwo {
+    margin-left: 30px;
+}
+
+.contactUs ul li i {
+    color: #fff;
+    background-color: #00bcd4;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    border-radius: 50%;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-right: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+@media only screen and (max-width:1199px) {
+    .contactUs ul .mOne {
+        margin-left: 30px;
+    }
+    .contactUs ul .mTwo {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:991px) {
+    .contactUs ul .mOne {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .contactUs .contactItem input {
+        width: 100%;
+    }
+    .contactUs .contactItem textarea {
+        width: 100%;
+    }
+    .contactUs .contactItem .btn {
+        width: 100%;
+    }
+    .contactUs .contactHeading {
+        margin-top: 30px;
+    }
+    .contactUs .contactHeading p {
+        padding-right: 0;
+    }
+    .contactUs .contactHeading hr {
+        width: 100%;
+    }
+    .contactUs ul .mOne {
+        margin-left: 0;
+    }
+    .contactUs ul .mTwo {
+        margin-left: 0;
+    }
+    .contactUs ul li {
+        width: 100%;
+    }
+}
+
+
+/* end of contact-section  */
